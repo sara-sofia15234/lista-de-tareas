@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lista de tareas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Lista de tareas</h1>
+  <form id="form">
+    <input type="text" id="nueva" placeholder="Nueva tarea..." autocomplete="off" aria-label="Nueva tarea">
+    <button type="submit">Agregar</button>
+  </form>
+  <div class="filters" id="filtros">
+    <button data-f="todas" class="on">Todas</button>
+    <button data-f="pendientes">Pendientes</button>
+    <button data-f="hechas">Hechas</button>
+  </div>
+  <ul id="lista"></ul>
+  <div class="pie">
+    <span id="contador"></span>
+    <button id="limpiar">Borrar completadas</button>
+  </div>
+</main>
+<script src="app.js">
+
+</script>
+</body>
+</html>
